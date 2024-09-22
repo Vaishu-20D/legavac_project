@@ -1,0 +1,262 @@
+.main-navbar-bg {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+
+}
+
+.nav-link {
+  color: navy;
+
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.main-slider {
+  background-image: url('./images/Home-slider.jpg');
+  height: 500px;
+  padding-top: 100px;
+  z-index: -1;
+
+}
+
+.logo {
+  width: 150px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  line-height: 60px;
+  color: #47dd07 !important;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-size: 400%;
+  z-index:0;
+  font-weight: bold;
+}
+
+.btn:hover {
+  animation: animate 8s linear infinite;
+  
+}
+
+.btn:before {
+
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #ffff00, #ff0000, #fb0094,
+      #0000ff, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: navy;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 60px;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: -1;
+}
+
+span {
+  display: block;
+  padding: 15px 50px;
+}
+
+button:hover {
+  border: 1px solid navy !important;
+}
+
+button::before,
+button::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+
+span::before,
+span::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+
+}
+
+button:hover::before,
+button:hover::after {
+  width: 100%;
+}
+
+button:hover span::before,
+button:hover span::after {
+  height: 100%;
+}
+
+.btn-1::before,
+.btn-1::after {
+  transition-delay: 0.2s;
+}
+
+.btn-1 span::before,
+.btn-1 span::after {
+  transition-delay: 0s;
+}
+
+.btn-1::before {
+  right: 0;
+  top: 0;
+}
+
+.btn-1::after {
+  left: 0;
+  bottom: 0;
+}
+
+.btn-1 span::before {
+  left: 0;
+  top: 0;
+}
+
+.btn-1 span::after {
+  right: 0;
+  bottom: 0;
+}
+
+.btn-1:hover::before,
+.btn-1:hover::after {
+  transition-delay: 0s;
+}
+
+.btn-1:hover span::before,
+.btn-1:hover span::after {
+  transition-delay: 0.2s;
+}
+
+.our_new_product{
+  background-color: rgb(229 232 245);
+  height: 950px;
+}
+
+.purches-btn{
+  border: 1px solid navy;
+  text-align: center;
+  padding: 15px 30px;
+  position: relative;
+  left: 450px;
+  top: 20px;
+  background-color: navy;
+  border-radius: 5px;
+  color: white;
+
+  text-decoration: none;
+}
+.bg-img{
+  background-image: url('./images/legavac-bg.jpg');
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.inner-bg{
+  background-color: hsla(0,0%,0%, 0.6);
+  height: 300px;
+  width: 100%;
+}
+.counting{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  font-weight: bold;
+
+}
+.counting h2{
+  text-align: center;
+}
+.applynow-card{
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: 150px;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.applynow-btn{
+  width: 12%;
+  position:relative;
+  top: 50px;
+  left: 30px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-bg{
+  background-color: rgb(5, 5, 86);
+  height: 650px;
+  width: 100%;
+  z-index: 1;
+  padding-top: 200px;
+
+ 
+
+}
+.footer-bg-inner ul li{
+  padding: 5px;
+}
+.getintouch-btn{
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+  padding:10px 60px;
+  text-decoration: none;
+  border-radius: 5px;
+}
